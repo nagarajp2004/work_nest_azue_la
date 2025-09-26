@@ -1,0 +1,212 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.nav-links span {
+    margin-right: 15px;
+    color: #555;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3498db;
+    margin-left: 15px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+
+/* Forms */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+}
+
+.form-container .info-text {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+@media (max-width: 900px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.tasks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.task-list h3, .create-task-card h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+.task-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fdfdfd;
+}
+
+.task-item h4 {
+    margin: 0 0 5px 0;
+}
+.task-item p {
+    margin: 0 0 10px 0;
+    color: #555;
+}
+.task-item small {
+    color: #7f8c8d;
+}
+
+.task-status {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.status-updater {
+    margin-top: 10px;
+}
+
+.status-select {
+    padding: 5px;
+    border-radius: 4px;
+    border-color: #ddd;
+}
+
+/* Messages */
+.message {
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
