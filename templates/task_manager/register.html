@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Register</h2>
+    <p class="info-text">Designation Level: A lower number means a higher rank (e.g., 1=CEO, 5=Intern).</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Register</button>
+    </form>
+</div>
+{% endblock %}
+
